@@ -1,0 +1,281 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-dic-2021, 19:19:34
+    Author     : Manuel Guillén Gallardo
+*/
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+/*
+ESTILO PARA INDEX =================================
+*/
+.title__idioma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Staatliches', cursive;
+    justify-content: center;
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+}
+.title__idioma h1 {
+    text-shadow: 0 0 20px rgb(0,0,0);
+}
+.main__idioma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(14,5,22);
+    background: linear-gradient(90deg, rgba(14,5,22,1) 0%, rgba(11,50,144,1) 100%);
+}
+.form__idioma {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap:1rem;
+    box-shadow: 0 0 20px rgb(0,0,0);
+    border: 2px solid white;
+}
+.form__idioma p {
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+.form__idioma div {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.btn__idioma {
+    cursor: pointer;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgb(0,0,0);
+    width: 100px;
+    height: 60px;
+    transition: .2s ease;
+}
+.btn__idioma:hover{
+    /*box-shadow: none;*/
+    transform: rotate(2deg);
+}
+#es {
+    background-image: url(IMAGENES/esl.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#en {
+    background-image: url(IMAGENES/gb.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+
+/*
+ESTILO PARA ELECCIÓN =================================
+*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    background: rgba(14,5,22,1);
+    border-bottom: 1px solid #a8a8a8;
+}
+.container__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Staatliches', cursive;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    border-right: 1px solid #a8a8a8;
+}
+.container__logo a {
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    width: 100%;
+}
+.main__eleccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(50,92,193,.50), rgba(216,223,226, .15)), url("IMAGENES/seguro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.main__app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(50,92,193,.50), rgba(216,223,226, .15)), url("IMAGENES/seguro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    box-sizing: border-box;
+}
+img {
+    position: absolute;
+    left: 80px;
+    top: 170px;
+    width: 300px;
+    z-index: -2;
+    box-shadow: 0 0 4px rgb(0,0,0);
+    border-radius: 10px;
+}
+.form__eleccion{
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(0,0,0);
+}
+.form__eleccion p {
+    text-align: start;
+    width: 100%;
+    margin-top: 10px;
+}
+.form__eleccion div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 7px;
+}
+.btn{
+    cursor: pointer;
+    border: none;
+    width: fit-content;
+    padding: 20px;
+    margin-top: 10px;
+    color: white;
+    background: rgb(50,92,193);
+    background: linear-gradient(90deg, rgba(50,92,193,1) 0%, rgba(24,39,138,1) 100%);
+    font-size: 18px;
+    border-radius: 5px;
+}
+input[type="checkbox"]{
+    margin-right: -4px;
+}
+.form__header {
+    display: flex;
+    flex-direction: column;
+}
+.form__header h2 {
+    padding: 5px;
+    background: rgb(50,92,193);
+    background: linear-gradient(90deg, rgba(50,92,193,1) 0%, rgba(24,39,138,1) 100%);
+    color: white;
+}
+.container__input{
+    border: 1px solid lightgrey;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 250px;
+    padding: 5px;
+}
+.container__presupuesto {
+    background: white;
+    height: fit-content;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0,0,0);
+}
+.titulo__presupuesto {
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    background: white;
+    background: rgb(50,92,193);
+    background: linear-gradient(90deg, rgba(50,92,193,1) 0%, rgba(24,39,138,1) 100%);
+    color: white;
+}
+table {
+    width: 600px;
+    background: white;
+    margin: 10px;
+}
+.resultadoTotal {
+    margin-top: -10px;
+}
+th, td {
+  border: 1px solid lightgrey;
+  padding: 5px;
+}
+table caption {
+    font-size: 20px;
+    font-weight: bolder;
+    background: white;
+    padding: 10px;
+    background: rgb(50,92,193);
+    background: linear-gradient(90deg, rgba(50,92,193,1) 0%, rgba(24,39,138,1) 100%);
+    color: white;
+}
+table th {
+    text-align: center;
+}
+.tr__resultado td{
+    font-weight: bolder;
+}
+.final {
+    height: 30px;
+    font-size: 25px;
+}
+
+.form__cuota {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.btn__cuota {
+    cursor: pointer;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgb(0,0,0);
+    width: 100px;
+    font-size: 25px;
+    color: white;
+    background: rgb(50,92,193);
+    background: linear-gradient(90deg, rgba(50,92,193,1) 0%, rgba(24,39,138,1) 100%);
+    font-size: 18px;
+    border-radius: 5px;
+    width: fit-content;
+    text-decoration: none;
+}
+
